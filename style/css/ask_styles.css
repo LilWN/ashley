@@ -4,6 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #F8C8DC;
+    overflow: hidden;
 }
 
 /* Position the "No" button absolutely within body */
@@ -63,4 +64,34 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 90px;
+}
+
+.fade1 {
+    opacity: 0;
+    animation: fade-in 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.fade2 {
+    opacity: 0;
+    animation: fade-in 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.fade3 {
+    opacity: 0;
+    animation: fade-in 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
